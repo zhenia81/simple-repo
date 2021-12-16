@@ -1,0 +1,9 @@
+version: '3'
+services:
+  docker-nginx:
+    image: nginx
+    ports:
+      - '8888:80'
+    volumes:
+      - ./www/:/var/www/xyz/
+      - ./nginx:/etc/nginx/conf.d/
