@@ -3,7 +3,7 @@ services:
   docker-nginx:
     image: nginx
     ports:
-      - '8888:80'
+      - '7777:80'
     volumes:
-      - ./www/:/var/www/xyz/
+      - ./www/:/var/www/site/
       - ./nginx:/etc/nginx/conf.d/
