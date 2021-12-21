@@ -1,5 +1,5 @@
 pipeline {
-    agent any
+    agent {label 'Slave1'}
     environment {
       PROJECT_NAME = "Simple Jenkinsfile"
       OWNER_NAME   = "TEST"
